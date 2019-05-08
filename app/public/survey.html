@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/style.css" />
+    <title>Friend Survey</title>
+</head>
+
+<body>
+    <div class="row justify-content-center">
+        <div class="col-10"><h1 class="body-text">Survey Questions</h1></div>
+        <div class="surveyMe col-10">
+            <!--Action is where the form is going, method is whether by url(get) or secure(push)-->
+            <h3>About You</h3>
+            <form name="yourForm" action="" method="">
+                <div class="form-group">
+                    <input type="text" id="fullname" name="fullname" placeholder="Type Full Name (Required)">
+                </div>
+                <div class="form-group">
+                    <input type="url" id="photoLink" name="photoLink" placeholder="Link to a photo of you (Required)">
+                </div>
+                <hr>
+                <div class="form-group">
+                    <h5>I love pets and would like to own 1 or many</h5>
+                    <select class="custom-select q1">
+                        <option selected>Select answer</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <h5>I would rather go out and party than stay at home</h5>
+                    <select class="custom-select q2">
+                        <option selected>Select answer</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <h5>I am outgoing and extroverted</h5>
+                    <select class="custom-select q3">
+                        <option selected>Select answer</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <h5>Making money is more important than enjoying my job</h5>
+                    <select class="custom-select q4">
+                        <option selected>Select answer</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <h5>I enjoy the taste of alchohol</h5>
+                    <select class="custom-select q5">
+                        <option selected>Select answer</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <h5>I have a dark sense of humor</h5>
+                    <select class="custom-select q6">
+                        <option selected>Select answer</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <h5>When making a decision I trust myself over anyone else</h5>
+                    <select class="custom-select q7">
+                        <option selected>Select answer</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <h5>I tend to keep my emotions to myself</h5>
+                    <select class="custom-select q8">
+                        <option selected>Select answer</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <h5>I am an excercise fanatic and workout often</h5>
+                    <select class="custom-select q9">
+                        <option selected>Select answer</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <h5>I am a daredevil and will try anything at least once</h5>
+                    <select class="custom-select q10">
+                        <option selected>Select answer</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+                <button class="btn btn-lg btn-dark" id="Submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+<script>
+$(".submit").on("click", function(event) {
+    event.preventDefault();
+
+    if ($("#fullname").val() === "" || $("#photoLink").val() === "" || !$(".custom-select")) {
+        alert("To submit you must complete all fields of the survey. Please go back and select an answer for all questions")
+    } else {
+        var friendsArray = {
+            name: $("#name").val().trim(),
+			photo: $("#photo").val().trim(),
+			scores: [
+				$("#q1").val(),
+                $("#q2").val(),
+                $("#q3").val(),
+                $("#q4").val(),
+                $("#q5").val(),
+                $("#q6").val(),
+                $("#q7").val(),
+                $("#q8").val(),
+                $("#q9").val(),
+                $("#q10").val()   
+            ]
+        }
+    }
+})
+</script>
+</html>

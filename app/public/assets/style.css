@@ -1,0 +1,48 @@
+body{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("images/besties.jpeg");
+    background-size: cover;
+    margin: auto;
+    height: 100vh;
+}
+.home-intro{
+    padding-top: 128px;
+}
+.jumbotron, p{
+    border: solid;
+    background: bisque;
+    text-align: center
+}
+@keyframes type {
+    from, to {opacity: 0;}
+    100% {opacity: 1;}
+    }
+.jumbotron, p {
+    opacity: 0;
+    animation: type 5s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+#btn{
+    animation: type 1s infinite;
+}
+.row{
+    overflow: auto;
+    height: 100vh
+}
+h5 {
+    background-color: bisque;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+button, input {
+    width: 25%;
+    background-color: bisque
+}
+.custom-select {
+    color: black;
+    border: none;
+    background-color: bisque
+}
